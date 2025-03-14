@@ -10,14 +10,13 @@ jobs:
   test:
     name: Run Tests
     runs-on: self-hosted
-    environment: staging
 
     strategy:
       matrix:
         node-version: [22] # Test on multiple Node.js versions
 
 
-    environment: {{ secrets.MONGO_URI}}
+    environment: MONGO_URI
 
     steps:
     - name: Checkout Code
