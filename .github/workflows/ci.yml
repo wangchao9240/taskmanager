@@ -69,7 +69,7 @@ jobs:
       run: npm test
 
 
-    - run: npm ci
+    # - run: npm ci
     - run: | 
         cd ./backend
         touch .env
